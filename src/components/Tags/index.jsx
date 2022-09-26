@@ -1,8 +1,8 @@
 import { ContainerTags } from "./styled";
 
-export function Tags({title}){
+export function Tags({title, ...rest}){
     return(
-        <ContainerTags>
+        <ContainerTags {...rest} >
             {title}
         </ContainerTags>
     )

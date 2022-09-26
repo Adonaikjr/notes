@@ -3,6 +3,8 @@ import { Header } from '../../components/Header'
 import { ContainerHome, Brand, Menu, Search, Content, NewNote } from './styled'
 import { FiPlus, FiSearch } from 'react-icons/fi'
 import { Input } from '../../components/Input'
+import { Section } from '../../components/Section'
+import { Note } from '../../components/Note'
 export function Home(){
     return(
         <ContainerHome>
@@ -21,7 +23,16 @@ export function Home(){
                 icon={FiSearch } />
             </Search>
             <Content>
-                
+                <Section title='Minhas notas'>
+                    <Note data={ 
+                        {title: 'React', 
+                            tags:[
+                                {id:'1',name:'react'},
+                                {id:'2', name:'rocketseat'}
+                    ]} } >
+                        
+                    </Note>
+                </Section>
             </Content>
             <NewNote>
                 <FiPlus/>Criar Nota
