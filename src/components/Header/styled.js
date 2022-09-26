@@ -12,9 +12,6 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
-
-
-
 `
 
 export const ContainerProfile = styled.div`

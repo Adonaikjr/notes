@@ -13,6 +13,9 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         
     }
+    button{
+        cursor: pointer;
+    }
     border-style, input, button, textarea{
         font-family: 'Roboto Slab', serif;
         font-size: 16px;

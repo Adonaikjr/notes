@@ -5,6 +5,7 @@ import { Home } from "../pages/Home";
 import { Signin } from "../pages/SignIn";
 import {  Signup } from "../pages/SignUp";
 import { Profile } from "../pages/Profile";
+import { New } from "../pages/New";
 
 export function AppRoutes(){
     return(
@@ -13,7 +14,8 @@ export function AppRoutes(){
             <Route path='/details' element={ <App/> }/>
             <Route path='/Signin' element={ <Signin/> }/>
             <Route path='/Signup' element={ <Signup/> }/>
-            <Route path='/profile' element={ <Profile/> } />
+            <Route path='/profile' element={ <Profile/> }/>
+            <Route path='/new' element={ <New/> }/>
             <Route path='*' element={ <Error/> } />
         </Routes>
     )
