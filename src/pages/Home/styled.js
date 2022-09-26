@@ -52,6 +52,7 @@ export const Content  = styled.div`
     grid-area: content;
     padding:  0px 64px;
     overflow: scroll;
+    
 
 
 

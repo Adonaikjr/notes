@@ -7,6 +7,7 @@ export const ContainerNotes = styled.div`
     border-radius: 10px;
     padding: 22px;
     margin-bottom: 16px;
+
     >h1{
         flex:1;
         text-align: left;
@@ -17,8 +18,6 @@ export const ContainerNotes = styled.div`
     }
     >footer{
         width:100%;
-        display: flex;
-        margin-left: 24px;
         
     }
 

@@ -7,6 +7,4 @@ export const ContainerTags = styled.span`
     margin-right: 6px;
     color: ${({theme}) => theme.COLORS.BACKGROUND_900};
     background: ${({theme}) => theme.COLORS.ORANGE};
-    margin-left: 16px;
-    
 `
