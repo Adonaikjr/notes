@@ -50,7 +50,9 @@ export const Search  = styled.div`
 export const Content  = styled.div`
     width: 100%;
     grid-area: content;
-    
+    padding:  0px 64px;
+    overflow: scroll;
+
 
 
 `

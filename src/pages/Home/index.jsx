@@ -32,6 +32,38 @@ export function Home(){
                     ]} } >
                         
                     </Note>
+                    <Note data={ 
+                        {title: 'React', 
+                            tags:[
+                                {id:'1',name:'react'},
+                                {id:'2', name:'rocketseat'}
+                    ]} } >
+                        
+                    </Note>
+                    <Note data={ 
+                        {title: 'React', 
+                            tags:[
+                                {id:'1',name:'react'},
+                                {id:'2', name:'rocketseat'}
+                    ]} } >
+                        
+                    </Note>
+                    <Note data={ 
+                        {title: 'React', 
+                            tags:[
+                                {id:'1',name:'react'},
+                                {id:'2', name:'rocketseat'}
+                    ]} } >
+                        
+                    </Note>
+                    <Note data={ 
+                        {title: 'React', 
+                            tags:[
+                                {id:'1',name:'react'},
+                                {id:'2', name:'rocketseat'}
+                    ]} } >
+                        
+                    </Note>
                 </Section>
             </Content>
             <NewNote>
