@@ -9,8 +9,10 @@ export const ContainerNew = styled.div`
     "header" 
     "content";
     >main{
+        width:80%;
         grid-area: 'content';
         overflow-y: scroll;
+        margin-bottom: 32px;
     }
     .tags{
         display:flex;
@@ -23,16 +25,18 @@ export const ContainerNew = styled.div`
 export const Form = styled.form`
     max-width: 550px;
     margin: 38px auto;
-    >header{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
 
-        margin-bottom: 36px;
+`
 
-        a{
-            font-size: 20px;
-            color: ${({theme}) => theme.COLORS.GRAY_100};
-        }
+export const Article = styled.div`
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-top: 36px;
+
+    a{
+        font-size: 20px;
+        color: ${({theme}) => theme.COLORS.GRAY_100};
     }
 `

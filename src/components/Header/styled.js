@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -14,7 +15,7 @@ export const HeaderContainer = styled.header`
     padding: 0 80px;
 `
 
-export const ContainerProfile = styled.div`
+export const ContainerProfile = styled(Link)`
     display: flex;
     align-items: center;
     height:56px;

@@ -5,6 +5,7 @@ import { FiPlus, FiSearch } from 'react-icons/fi'
 import { Input } from '../../components/Input'
 import { Section } from '../../components/Section'
 import { Note } from '../../components/Note'
+import { Link } from 'react-router-dom'
 export function Home(){
     return(
         <ContainerHome>
@@ -34,7 +35,7 @@ export function Home(){
                     </Note>
                 </Section>
             </Content>
-            <NewNote>
+            <NewNote to='/new'>
                 <FiPlus/>Criar Nota
             </NewNote>
         </ContainerHome>

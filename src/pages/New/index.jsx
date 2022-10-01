@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { NoteItem } from "../../components/NoteItem";
 import { Section } from "../../components/Section";
 import { TextArea } from "../../components/TextArea";
-import { ContainerNew } from "./styled";
+import { ContainerNew, Article } from "./styled";
 
 export function New(){
     return(
@@ -12,10 +13,10 @@ export function New(){
             <Header/>
             <main>
                 <form>
-                    <header>
+                    <Article>
                         <h1>Criar nota</h1>
-                        <Link to='/home'>Voltar</Link>
-                    </header>
+                        <Link to='/'>Voltar</Link>
+                    </Article>
 
                     <Input placeholder='title'/>
                     <TextArea placeholder='observacoes' />
@@ -30,6 +31,7 @@ export function New(){
                             <NoteItem isNew placeholder='Nova Tags'/>
                         </div>
                     </Section>
+                    <Button title='Salvar' />
                 </form>
             </main>
         </ContainerNew>

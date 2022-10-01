@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+
 
 export const ContainerHome  = styled.div`
     width: 100%;
@@ -52,19 +54,30 @@ export const Content  = styled.div`
     grid-area: content;
     padding:  0px 64px;
     overflow: scroll;
-    
+
 
 
 
 `
-export const NewNote = styled.button`
+export const NewNote = styled(Link)`
+
     grid-area: newnote;
+
     background: ${({theme}) => theme.COLORS.ORANGE};
     border: none;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 4rem;
+    text-align: center;
     font-size: 24px;
     svg{
         margin-right: 8px;
         font-size: 24px;
     }
+    
+    color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+    text-decoration: none;
+    
 `
