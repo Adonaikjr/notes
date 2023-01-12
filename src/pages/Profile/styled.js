@@ -6,16 +6,16 @@ export const ContainerProfile = styled.div`
         width: 100%;
         background: ${({theme}) => theme.COLORS.BACKGROUND_900};
         height:144px;
-
         display:flex;
         align-items: center;
         padding: 0 124px;
-        a{
-            width:100%;
-        }
         svg{
             color: ${({theme}) => theme.COLORS.GRAY_100};
             font-size:24px;
+        }
+        button {
+            border: none;
+            background-color: transparent;
         }
     }
 `
@@ -36,6 +36,7 @@ export const Avatar = styled.div`
         width:186px;
         height:186px;
         border-radius: 50%;
+        border: solid 1px ${({ theme }) => theme.COLORS.ORANGE};
     } 
     >label{
         width:48px;

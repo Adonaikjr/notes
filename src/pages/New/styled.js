@@ -1,42 +1,54 @@
 import styled from "styled-components";
+import { ContainerSection } from "../../components/Section/styled";
 
 export const ContainerNew = styled.div`
-    width:100;
-    height:100vh;
-    display:grid;
-    grid-template-rows: 105px auto;
-    grid-template-areas: 
-    "header" 
-    "content";
-    >main{
-        width:80%;
-        grid-area: 'content';
-        overflow-y: scroll;
-        margin-bottom: 32px;
-    }
-    .tags{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-`
+  width: 100;
+  height: 100vh;
+  > main {
+    margin-bottom: 32px;
+  }
+  .tags {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+`;
+
+export const NewContainerSection = styled(ContainerSection)`
+  height: 10rem;
+  overflow: auto;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2rem;
+  
+`;
 
 export const Form = styled.form`
-    max-width: 550px;
-    margin: 38px auto;
-
-`
-
+  width: 100%;
+`;
+export const Label = styled.label`
+  > div {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  input {
+    width: 100%;
+  }
+`;
 export const Article = styled.div`
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 36px;
-    margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 
-    a{
-        font-size: 20px;
-        color: ${({theme}) => theme.COLORS.GRAY_100};
-    }
-`
+  a {
+    font-size: 20px;
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+  }
+`;
