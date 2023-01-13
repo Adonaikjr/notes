@@ -14,7 +14,6 @@ export const ContentHome = styled.main`
 export const Menu = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   text-align: center;
   width: 25rem;
@@ -37,7 +36,7 @@ export const Brand = styled.div`
     }
   }
   ul {
-    height: 60vh;
+    height: 30rem;
     overflow: auto;
     list-style: none;
     direction: rtl;
@@ -178,7 +177,7 @@ export const NewNote = styled(Link)`
   text-decoration: none;
   transition: 0.2s;
   :hover {
-    height: 10rem;
+    height: 6rem;
     transition: 0.1s;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
       rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
